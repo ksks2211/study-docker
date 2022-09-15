@@ -1,0 +1,5 @@
+FROM ubuntu:14.04
+ENV APP_NAME myapp
+ENV HOMEDIR /home
+WORKDIR $HOMEDIR
+RUN touch $HOMEDIR/mytouchfile
