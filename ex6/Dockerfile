@@ -1,5 +1,4 @@
 FROM ubuntu:14.04
-ARG ROOT_ID=root
-ARG ROOT_PASSWORD
+ARG dirname
 WORKDIR /home
-RUN ["/bin/bash","-c","echo $ROOT_PASSWORD >> test.txt"]
+RUN mkdir /home/${dirname}
